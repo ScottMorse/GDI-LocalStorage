@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Some Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+  <div id="page-wrap">
+    <Header>
+        <h1>Some Restaurant</h1>
+    </Header>
+
+    <div id="menu">
+      <h2>Menu</h2>
+      <h3>Select your items:</h3>
+      <form id="menu-form">
+        <label for="steak-check" >
+          <input id="steak-check" data-itemname="steak" class="menu-check" type="checkbox"/>
+          <div class="menu-item">Steak</div>
+        </label>
+        <label for="egg-check" >
+          <input id="egg-check" data-itemname="eggs" class="menu-check" type="checkbox"/>
+          <div class="menu-item">Eggs</div>
+        </label>
+        <label for="cheese-check" >
+          <input id="cheese-check" data-itemname="cheese" class="menu-check" type="checkbox"/>
+          <div class="menu-item">Cheese</div>
+        </label>
+        <label for="milk-check" >
+          <input id="milk-check" data-itemname="milk" class="menu-check" type="checkbox"/>
+          <div class="menu-item">Milk</div>
+        </label>
+        <label for="skittles-check" >
+          <input id="skittles-check" data-itemname="skittles" class="menu-check" type="checkbox"/>
+          <div class="menu-item">Skittles</div>
+        </label>
+        <input id="place-order" type="submit" value="Place Order"/>
+      </form>
+    </div>
+
+    <div id="orders">
+      <h2>Your orders: </h2>
+      <ul id="orders-list"></ul>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

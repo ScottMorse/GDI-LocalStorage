@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html{
+  line-height: 1.5;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+Header {
+  background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid rgb(255, 217, 0);
+  box-shadow: 0 0 0 5px rgb(255, 60, 0);
+}
+
+h1 {
+  font-family: Lobster;
+  font-size: 80px;
+  color: rgb(255, 217, 0);
+  text-shadow: 5px 5px rgb(255, 60, 0);
+  user-select: none;
+  background: rgb(102, 0, 0);
+  padding: 10px 30px;
+  border-radius: 5%/20%;
+  border: 3px solid rgb(255, 60, 0);
+  box-shadow: 5px 5px 0 -2px rgb(255, 217, 0);
+}
+
+h2 {
+  font-family: Lobster;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 0.6em;
+  margin: 10px;
+  user-select: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#page-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  margin-top: 50px;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  background: whitesmoke;
+  border: 10px solid rgb(255, 217, 0);
+}
+
+#menu-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-check {
+  display: none;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.menu-check:checked ~ .menu-item {
+  background-color: chartreuse;
+}
+
+.menu-item{
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5%/20%;
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.4s ease;
+}
+
+#place-order{
+  all: unset;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(255, 60, 0);
+  text-align: center;
+  color: white;
+  height: 70px;
+  font-weight: bold;
+  transition: background-color 0.4s ease;
+}
+
+#place-order:hover{
+  cursor: pointer;
+  background-color: chartreuse;
+}
+
+#orders {
+  display: flex;
+  margin-top: 50px;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  background: whitesmoke;
+  border: 10px solid rgb(255, 60, 0);
+}
+
+#orders > h2 {
+  margin: 20px;
+}
