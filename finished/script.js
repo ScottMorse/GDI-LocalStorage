@@ -81,5 +81,4 @@ function submitOrder(e){
   displayOrders()
 }
 
-menuChecks.forEach(menuCheck => menuCheck.addEventListener('change',checkItem))
 menuForm.addEventListener('submit',submitOrder)
